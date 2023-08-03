@@ -1,0 +1,30 @@
+20110610-16:32:23  :INETCONNECT( smtp.servidor.com.br, 110 )
+>> 13B5D10 <<
+
+20110610-16:32:23  :INETERRORCODE( 13B5D10 )
+>>          0 <<
+
+20110610-16:32:24  :INETRECVLINE( 13B5D10, , 128 )
+>> +OK Hello there. <<
+
+20110610-16:32:24  :INETERRORCODE( 13B5D10 )
+>>          0 <<
+
+20110610-16:32:24  :INETSENDALL( 13B5D10, 32, USER meu_usuer@servidor.com.br )
+>>         32 <<
+
+20110610-16:32:24  :INETRECVLINE( 13B5D10, , 128 )
+>> +OK Password required. <<
+
+20110610-16:32:24  :INETERRORCODE( 13B5D10 )
+>>          0 <<
+
+20110610-16:32:24  :INETSENDALL( 13B5D10, 12, PASS senha )
+>>         12 <<
+
+20110610-16:32:30  :INETRECVLINE( 13B5D10, , 128 )
+>> -ERR Login failed. <<
+
+20110610-16:32:30  :INETERRORCODE( 13B5D10 )
+>>          0 <<
+

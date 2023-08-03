@@ -1,0 +1,32 @@
+c0w32.obj + 
+tstAnimation.obj, + 
+tstAnimation.exe, + 
+tstAnimation.map, + 
+..\..\lib\hwgui.lib + 
+..\..\lib\procmisc.lib + 
+..\..\lib\hbxml.lib + 
+..\..\lib\hwg_qhtm.lib + 
+..\..\lib\hbactivex.lib + 
+d:\xHarbour\lib\rtl.lib + 
+d:\xHarbour\lib\vm.lib + 
+d:\xHarbour\lib\gtgui.lib + 
+d:\xHarbour\lib\gtgui.lib + 
+d:\xHarbour\lib\lang.lib + 
+d:\xHarbour\lib\codepage.lib + 
+d:\xHarbour\lib\macro.lib + 
+d:\xHarbour\lib\rdd.lib + 
+d:\xHarbour\lib\dbfntx.lib + 
+d:\xHarbour\lib\dbfcdx.lib + 
+d:\xHarbour\lib\dbffpt.lib + 
+d:\xHarbour\lib\common.lib + 
+d:\xHarbour\lib\debug.lib + 
+d:\xHarbour\lib\pp.lib + 
+d:\xHarbour\lib\hsx.lib + 
+d:\xHarbour\lib\hbsix.lib + 
+d:\xHarbour\lib\mysql.lib + 
+d:\xHarbour\lib\libmysql.lib + 
+d:\xHarbour\lib\pcrepos.lib + 
+cw32.lib + 
+import32.lib, 
+obj\tstAnimation.res + 
+obj\hwgui_xp.res 

@@ -1,0 +1,15 @@
+Como usar Anchor no hwgui
+Anchor é uma propriedade que varia de 1 a 512
+1 - TOP ABSOLUTO
+2 - LEFT ABSOLUTO
+4 - BOTTOM ABSOLUTO
+8 - RIGHT ABSOLUTO
+16 TOP RELATIVO
+32 - LEFT RELATIVO
+64 - BOTTOM RELATIVO
+128 - RIGHT RELATIVO
+voce pode combinar os efeitos
+Exemplo:
+Se voce quer manter uma toolbar ocupando toda a largura do FORM ao maximizar ele USE anchor = 11
+Se voce quer manter um botão sempre do lado direito do form mantendo sempre a mesma distancia da borda direita use anchor = 9
+Luis Fernando Basso

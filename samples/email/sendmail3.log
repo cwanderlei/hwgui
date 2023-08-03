@@ -1,0 +1,60 @@
+20110610-16:43:57  :INETCONNECT( smtp.datarey.com.br, 25 )
+>> 14A124C <<
+
+20110610-16:43:57  :INETERRORCODE( 14A124C )
+>>          0 <<
+
+20110610-16:43:57  :INETSENDALL( 14A124C, 38, HELO desenvolvimento5@datarey.com.br )
+>>         38 <<
+
+20110610-16:43:57  :INETRECVLINE( 14A124C, , 512 )
+>> 220 bart0005.locaweb.com.br ESMTP Postfix (Debian/GNU) <<
+
+20110610-16:43:57  :INETERRORCODE( 14A124C )
+>>          0 <<
+
+20110610-16:43:57  :INETRECVLINE( 14A124C, , 512 )
+>> 250 bart0005.locaweb.com.br <<
+
+20110610-16:43:57  :INETERRORCODE( 14A124C )
+>>          0 <<
+
+20110610-16:44:07  :INETRECVLINE( 14A124C, , 512 )
+>> 421 4.4.2 bart0005.locaweb.com.br Error: timeout exceeded <<
+
+20110610-16:44:07  :INETERRORCODE( 14A124C )
+>>          0 <<
+
+20110610-16:44:07  :INETRECVLINE( 14A124C, , 512 )
+>> NIL <<
+
+20110610-16:44:07  :INETERRORCODE( 14A124C )
+>>         -2 <<
+
+20110610-16:44:07  :INETSENDALL( 14A124C, 46, MAIL FROM: <desenvolvimento5@datarey.com.br> )
+>>         46 <<
+
+20110610-16:44:07  :INETRECVLINE( 14A124C, , 512 )
+>> NIL <<
+
+20110610-16:44:07  :INETERRORCODE( 14A124C )
+>>         -2 <<
+
+20110610-16:44:07  :INETSENDALL( 14A124C, 46, MAIL FROM: <desenvolvimento5@datarey.com.br> )
+>>         46 <<
+
+20110610-16:44:07  :INETRECVLINE( 14A124C, , 512 )
+>> NIL <<
+
+20110610-16:44:07  :INETERRORCODE( 14A124C )
+>>         -2 <<
+
+20110610-16:44:07  :INETSENDALL( 14A124C, 5, . )
+>>          5 <<
+
+20110610-16:44:07  :INETRECVLINE( 14A124C, , 512 )
+>> NIL <<
+
+20110610-16:44:07  :INETERRORCODE( 14A124C )
+>>         -2 <<
+

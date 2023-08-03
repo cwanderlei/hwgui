@@ -1,0 +1,4 @@
+-I"D:\hwgui\include;D:\xharbour123_Bcc73\include;D:\borland\BCC73\include;D:\hwgui\include;"
+-L"D:\hwgui\lib;D:\xharbour123_Bcc73\lib;D:\borland\BCC73\lib;D:\borland\BCC73\lib\psdk;D:\hwgui\lib;;obj;;"
+-o"D:\DataFarma\lib\Activex\htmlfunc.obj"
+"D:\DataFarma\lib\Activex\htmlfunc.c"

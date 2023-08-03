@@ -1,0 +1,15 @@
+
+Type: C >>>xhb.exe -o"obj\EcfBema.c" -m -n -pOobj\ -q -gc0  -I"d:\xHb\include" -I"C:\hwgui\include"  -I"D:\xHB\include" -I"D:\xHB\include\w32" "EcfBema.prg"<<<
+
+xHarbour Compiler build 1.2.1 (SimpLex) (Rev. 6633)
+Copyright 1999-2009, http://www.xharbour.org http://www.harbour-project.org/
+EcfBema.prg(296) Error E0030  Syntax error: "syntax error at 'FUNCTION'"
+1 error
+
+No code generated
+
+Type: C >>>Couldn't build: EcfBema.obj<<<
+Type: C >>>TMAKEOBJECT<<<
+Type: C >>>TMAKEOBJECT:REFRESH<<<
+Type: N >>>      1423<<<
+

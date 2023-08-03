@@ -1,0 +1,63 @@
+20110610-16:33:40  :INETCONNECT( smtp.servidor.com.br, 25 )
+>> 13C10D0 <<
+
+20110610-16:33:40  :INETERRORCODE( 13C10D0 )
+>>          0 <<
+
+20110610-16:33:40  :INETSENDALL( 13C10D0, 32, HELO meu_usuer@servidor.com.br )
+>>         32 <<
+
+20110610-16:33:41  :INETRECVLINE( 13C10D0, , 512 )
+>> 220 ns.servidor.com.br ESTMP SmartCORP <<
+
+20110610-16:33:41  :INETERRORCODE( 13C10D0 )
+>>          0 <<
+
+20110610-16:33:42  :INETRECVLINE( 13C10D0, , 512 )
+>> 250 internet-gw.servidor.com.br <<
+
+20110610-16:33:42  :INETERRORCODE( 13C10D0 )
+>>          0 <<
+
+20110610-16:34:02  :INETRECVLINE( 13C10D0, , 512 )
+>> NIL <<
+
+20110610-16:34:02  :INETERRORCODE( 13C10D0 )
+>>         -1 <<
+
+20110610-16:34:02  :INETSENDALL( 13C10D0, 40, MAIL FROM: <meu_email@servidor.com.br> )
+>>         40 <<
+
+20110610-16:34:03  :INETRECVLINE( 13C10D0, , 512 )
+>> 250 Ok <<
+
+20110610-16:34:03  :INETERRORCODE( 13C10D0 )
+>>          0 <<
+
+20110610-16:34:03  :INETSENDALL( 13C10D0, 36, RCPT TO: <cwanderlei@yahoo.com.br> )
+>>         36 <<
+
+20110610-16:34:03  :INETRECVLINE( 13C10D0, , 512 )
+>> 501 <meu_usuer?servidor.com.br>: Helo command rejected: Invalid name <<
+
+20110610-16:34:03  :INETERRORCODE( 13C10D0 )
+>>          0 <<
+
+20110610-16:34:03  :INETSENDALL( 13C10D0, 40, MAIL FROM: <meu_email@servidor.com.br> )
+>>         40 <<
+
+20110610-16:34:23  :INETRECVLINE( 13C10D0, , 512 )
+>> NIL <<
+
+20110610-16:34:23  :INETERRORCODE( 13C10D0 )
+>>         -1 <<
+
+20110610-16:34:23  :INETSENDALL( 13C10D0, 5, . )
+>>          5 <<
+
+20110610-16:34:34  :INETRECVLINE( 13C10D0, , 512 )
+>> 503 Error: nested MAIL command <<
+
+20110610-16:34:34  :INETERRORCODE( 13C10D0 )
+>>          0 <<
+

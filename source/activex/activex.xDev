@@ -1,0 +1,39 @@
+<!--
+################################################
+# xDevStudio Project - xdev@kssoftware.com.br  #
+# Created @ 18/04/2022 16:58:36                #
+#                                              #
+### Standard xDev Config - Layout v1.5 #########
+-->
+<project>
+   <option compiler="413714">
+   <option outputname="activex">
+   <option targettype="LIB">
+   <option outputpath="D:\hwgui\lib\">
+   <option root="($)">
+   <option runpath="">
+   <option runparams="">
+   <option pathch="D:\hwgui\include">
+   <option pathlib="D:\hwgui\lib">
+   <option pathobj="">
+   <option pathtooutput="">
+   <option defines="">
+   <option documentroot="">
+   <option makeincfile="Sim">
+   <option taskprepare="">
+   <option taskfinalize="">
+
+   <compilerparam name="HwGUI.xCompiler">
+      <option presetsname="413714">
+      <option fflagm="Sim">
+      <option fflagn="Sim">
+      <option fforcecompileall="Sim">
+   </compilerparam>
+
+   <unit filename="c_activex.c" compile="Sim">
+   <unit filename="h_activex.prg" compile="Sim">
+   <unit filename="hhtml.prg" compile="Sim">
+   <unit filename="htmlcore.c" compile="Sim">
+   <unit filename="htmlcore.h" compile="Sim">
+   <unit filename="htmlfunc.c" compile="Sim">
+</project>

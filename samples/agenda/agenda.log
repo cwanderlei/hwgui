@@ -1,0 +1,30 @@
+xHarbour Compiler build 1.0.0 (SimpLex)
+Copyright 1999-2007, http://www.xharbour.org http://www.harbour-project.org/
+Compiling 'AGENDA.PRG'...
+1002003004005006007008009001000110012001300140015001600170018001002003001002003004005006007008009001000110012001300140010020030040050060070080090010001100120013001400150016001700180010020030040050060070080090010001100120013001400100200300400500600700800Lines 898, Functions/Procedures 32
+Generating C source output to 'obj\AGENDA.c'...
+Done.
+
+Building object module for 'obj\AGENDA.c'
+using C compiler 'BCC32' as defined in 'c:\xharbour\bin\harbour.cfg'...
+Exec: BCC32  -c -D__EXPORT__ -IC:\xharbour\include  -d -LC:\xharbour\lib -oobj\AGENDA.obj obj\AGENDA.c
+Borland C++ 5.5.1 for Win32 Copyright (c) 1993, 2000 Borland
+obj\AGENDA.c:
+Done.
+Deleting: "obj\AGENDA.c"
+Done.
+xHarbour Compiler build 1.0.0 (SimpLex)
+Copyright 1999-2007, http://www.xharbour.org http://www.harbour-project.org/
+Compiling 'REL.PRG'...
+100200300100100200300Lines 45, Functions/Procedures 1
+Generating C source output to 'obj\REL.c'...
+Done.
+
+Building object module for 'obj\REL.c'
+using C compiler 'BCC32' as defined in 'c:\xharbour\bin\harbour.cfg'...
+Exec: BCC32  -c -D__EXPORT__ -IC:\xharbour\include  -d -LC:\xharbour\lib -oobj\REL.obj obj\REL.c
+Borland C++ 5.5.1 for Win32 Copyright (c) 1993, 2000 Borland
+obj\REL.c:
+Done.
+Deleting: "obj\REL.c"
+Done.

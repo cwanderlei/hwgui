@@ -1,0 +1,9 @@
+
+Type: C >>>bcc32.exe -o"xbp\scrdebug.obj" -c   -I"d:\hwgui\include" -I"D:\xHarbour\include" "xbp\scrdebug.c"<<<
+
+Borland C++ 5.82 for Win32 Copyright (c) 1993, 2005 Borland
+xbp\scrdebug.c:
+
+Type: C >>>tlib.exe   "hwgui\lib\procmisc.lib" +"xbp\procini.obj" +"xbp\procs7.obj" +"xbp\procscri.obj" +"xbp\saymoney.obj" +"xbp\scrdebug.obj" +"xbp\arr2str.obj" +"xbp\blowfish.obj" <<<
+
+TLIB 4.5 Copyright (c) 1987, 1998 Borland International

@@ -1,0 +1,13 @@
+Error BASE/1003  Vari vel nÆo existe: CODIGO
+Called from AGENDA.PRG->NOVO_REGISTRO(301)
+Called from AGENDA.PRG->(b)MAIN(101)
+Called from hbrowse.prg->HBROWSE:EDIT(1995)
+Called from hbrowse.prg->HBROWSE:BUTTONDBL(1920)
+Called from hbrowse.prg->HBROWSE:ONEVENT(535)
+Called from ->HWG_DLGBOXINDIRECT(0)
+Called from hdialog.prg->HDIALOG:ACTIVATE(173)
+Called from AGENDA.PRG->MAIN(179)
+
+HwGUI 2.17 xHarbour build 1.0.0 Intl. (SimpLex)
+Date:11/05/12
+Time:22:57:55

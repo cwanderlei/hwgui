@@ -1,0 +1,19 @@
+
+Type: C >>>harbour.exe -o"xbp\hxmldoc.c" -m -n -pOxbp\ -q -gc0 -B  -I"c:\hwgui\include"  -I"D:\xHarbour\include" "hxmldoc.prg"<<<
+
+xHarbour Compiler build 1.2.1 (SimpLex) (Rev. 9376)
+Copyright 1999-2011, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hxmldoc.obj" -c   -I"c:\hwgui\include" -I"D:\xHarbour\include" "xbp\hxmldoc.c"<<<
+
+Borland C++ 5.5.1 for Win32 Copyright (c) 1993, 2000 Borland
+xbp\hxmldoc.c:
+
+Type: C >>>bcc32.exe -o"xbp\xmlparse.obj" -c   -I"c:\hwgui\include" -I"D:\xHarbour\include" "xmlparse.c"<<<
+
+Borland C++ 5.5.1 for Win32 Copyright (c) 1993, 2000 Borland
+xmlparse.c:
+
+Type: C >>>tlib.exe   "xmldoc.lib" +"xbp\hxmldoc.obj" +"xbp\xmlparse.obj" <<<
+
+TLIB 4.5 Copyright (c) 1987, 1999 Inprise Corporation

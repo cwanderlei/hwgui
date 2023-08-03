@@ -1,0 +1,282 @@
+#line 16 "EcfBema.prg"
+GLOBAL handle
+
+INIT PROCEDURE InitDlls
+  handle := LoadLibrary( "BemaFI32.dll" )
+RETURN
+
+EXIT PROCEDURE FreeDlls
+  FreeLibrary( handle )
+RETURN
+
+Function Main()
+Local oMain
+Private oMenu
+
+
+
+        oMain := HMainWindow():New( Iif(.F.,2,1),,,,0,0,500,500,"Teste de Menu",,,,,,,,,,,,,,,,,)
+
+               Hwg_BeginMenu( oMain,, )
+                  Hwg_BeginMenu(,, "Exemplo" )
+                     Hwg_DefineMenuItem( "&Sair", 1001, {|| oMain:Close()}, .F.,,, "\hwgui\image\exit_m.bmp", .F., .F. )
+                     Hwg_DefineMenuItem()
+
+
+
+                     Hwg_DefineMenuItem( "&Funções do ECF", 1004, {|| IMPRIME()}, .F.,,, "\hwgui\image\BUILD.BMP", .F., .F. )
+                  Hwg_EndMenu()
+                Hwg_EndMenu()
+
+
+
+        oMain:Activate( !.F., .F., .F., .F., )
+Return Nil
+
+FUNCTION IMPRIME()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bematech_FI_LeituraX()
+RETURN
+Function TrataRetorno(_retorno,nFuncao)
+if _retorno == 0
+   msginfo("Erro de Comunicação - "+nFuncao)
+elseif _retorno == -2
+   msginfo(" Parâmetro Inválido - "+nFuncao)
+elseif _retorno == -4
+   msginfo("Arquivo ini não encontrado ou parâmetro inválido para o nome da porta - "+nFuncao)
+elseif _retorno == -5
+   msginfo(" Erro ao abrir a porta de comunicação - "+nFuncao)
+else
+   msginfo("Erro de Desconhecido - "+str(_retorno)+" - "+nFuncao)
+endif
+return
+
+
+DLL32 FUNCTION Bematech_FI_LeituraX() AS LONG PASCAL FROM "Bematech_FI_LeituraX" LIB "BEMAFI32.dll"

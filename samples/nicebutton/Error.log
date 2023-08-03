@@ -1,0 +1,10 @@
+Error BASE/1004  Class: 'LOGICAL' has no exported method: END
+Called from ->END(0)
+Called from hnice.prg->NICEBUTTPROC(149)
+Called from ->HWG_ACTIVATEMAINWINDOW(0)
+Called from hwindow.prg->HMAINWINDOW:ACTIVATE(281)
+Called from nice.prg->MAIN(7)
+
+HwGUI 2.17 xHarbour build 1.0.0 Intl. (SimpLex)
+Date:02/28/20
+Time:10:56:54

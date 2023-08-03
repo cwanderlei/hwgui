@@ -1,0 +1,24 @@
+Error BASE/1068  Argument error: array access
+Called from graph.prg->HGRAPH:CALCMINMAX(191)
+Called from graph.prg->HGRAPH:REBUILD(294)
+Called from graph.prg->MUDAVALOR(101)
+Called from graph.prg->(b)GRAPH2(64)
+Called from \hwgui\source\hcontrol.prg->HBUTTON:ONCLICK(1002)
+Called from \hwgui\source\hcontrol.prg->(b)HBUTTON:NEW(909)
+Called from \hwgui\source\hdialog.prg->DLGCOMMAND(545)
+Called from \hwgui\source\hdialog.prg->(b)(_INITSTATICS00003)(0)
+Called from \hwgui\source\hdialog.prg->HDIALOG:ONEVENT(241)
+Called from ->HWG_DLGBOXINDIRECT(0)
+Called from \hwgui\source\hdialog.prg->HDIALOG:ACTIVATE(185)
+Called from graph.prg->GRAPH2(64)
+Called from graph.prg->(b)MAIN(15)
+Called from \hwgui\source\hwindow.prg->ONCOMMAND(751)
+Called from \hwgui\source\hwindow.prg->(b)HMAINWINDOW(223)
+Called from \hwgui\source\hwindow.prg->HMAINWINDOW:ONEVENT(397)
+Called from ->HWG_ACTIVATEMAINWINDOW(0)
+Called from \hwgui\source\hwindow.prg->HMAINWINDOW:ACTIVATE(358)
+Called from graph.prg->MAIN(19)
+
+HwGUI 2.17 xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Date:08/16/19
+Time:09:49:59

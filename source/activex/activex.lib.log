@@ -1,0 +1,42 @@
+
+Type: C >>>harbour.exe -o"xbp\h_activex.c" -m -n -pOxbp\ -q -gc0  -I"d:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "h_activex.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\h_activex.obj" -c   -I"d:\hwgui\include" -I"D:\xharbour123_Bcc73\include" "xbp\h_activex.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\h_activex.c:
+
+Type: C >>>harbour.exe -o"xbp\hhtml.c" -m -n -pOxbp\ -q -gc0  -I"d:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "hhtml.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hhtml.obj" -c   -I"d:\hwgui\include" -I"D:\xharbour123_Bcc73\include" "xbp\hhtml.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hhtml.c:
+
+Type: C >>>bcc32.exe -o"xbp\c_activex.obj" -c   -I"d:\hwgui\include" -I"D:\xharbour123_Bcc73\include" "c_activex.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+c_activex.c:
+
+Type: C >>>bcc32.exe -o"xbp\htmlcore.obj" -c   -I"d:\hwgui\include" -I"D:\xharbour123_Bcc73\include" "htmlcore.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+htmlcore.c:
+Warning W8075 htmlcore.c 1386: Suspicious pointer conversion in function Dispatch_AddRef
+Warning W8075 htmlcore.c 1391: Suspicious pointer conversion in function Dispatch_Release
+Warning W8075 htmlcore.c 1676: Suspicious pointer conversion in function CreateWebEvtHandler
+Error E2277 htmlcore.c 1845: Lvalue required in function GetWebPtrs
+Error E2277 htmlcore.c 1991: Lvalue required in function GetWebElement
+*** 2 errors in Compile ***
+
+Type: C >>>Couldn't build: htmlcore.obj<<<
+Type: C >>>TMAKEOBJECT<<<
+Type: C >>>TMAKEOBJECT:REFRESH<<<
+Type: N >>>      1409<<<
+

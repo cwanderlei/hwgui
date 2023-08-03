@@ -1,0 +1,88 @@
+#include "windows.ch"
+#include "guilib.ch"
+#include "hwgui.ch"
+#include "common.ch"
+
+*************
+Function Main
+*************
+PRIVATE oMainWindow, oTrayMenu
+PRIVATE oIcon := HIcon():AddResource("ICON_1")
+
+INIT WINDOW oMainWindow MAIN TITLE "Servidor de Proteção"
+
+CONTEXT MENU oTrayMenu
+    MENUITEM "Configurações" ACTION {|| MyFunc() }
+    SEPARATOR
+    MENUITEM "Sair" ACTION {|| Sair()}
+ENDMENU
+
+oMainWindow:InitTray(oIcon,,oTrayMenu,"Servidor de Proteção")
+if Os_IsWinNT()
+  *oMainWindow:handle
+   ShowNotifyInfo( GetModalHandle() , .T. , "Servidor de Proteção" , NIL, "Inicio do Teste de Ballon","Titulo Numero 1" )
+endif
+ACTIVATE WINDOW oMainWindow NOSHOW
+oTrayMenu:End()
+Return Nil
+
+Function MyFunc()
+ ShowNotifyInfo( GetModalHandle() , .F. , "Servidor de Proteção" , NIL, "Inicio do Teste de Ballon","Titulo Numero 2" )
+ //ShowNotifyInfo( GetModalHandle() , .T. , "Servidor de Proteção" , NIL, "Inicio do Teste de Ballon","Titulo Numero 2" )
+Return Nil
+
+*************
+Function Sair
+*************
+IF MsgYesNo("Deseja Realmente Sair","Aviso do Sistema")
+   oMainWindow:Close()
+   quit
+endif
+Return
+
+#pragma BEGINDUMP
+
+#define _WIN32_IE      0x0500
+#define HB_OS_WIN_32_USED
+#define _WIN32_WINNT   0x0400
+#include <shlobj.h>
+
+#include <windows.h>
+#include <commctrl.h>
+#include "hbapi.h"
+
+static void ShowNotifyInfo(HWND hWnd, BOOL bAdd, HICON hIcon, LPSTR szText, LPSTR szInfo, LPSTR szInfoTitle);
+
+HB_FUNC ( SHOWNOTIFYINFO )
+{
+	ShowNotifyInfo( (HWND) hb_parnl(1), (BOOL) hb_parl(2), (HICON) hb_parnl(3), (LPSTR) hb_parc(4),
+			(LPSTR) hb_parc(5), (LPSTR) hb_parc(6) );
+}
+
+static void ShowNotifyInfo(HWND hWnd, BOOL bAdd, HICON hIcon, LPSTR szText, LPSTR szInfo, LPSTR szInfoTitle)
+{
+	NOTIFYICONDATA nid;
+
+	ZeroMemory( &nid, sizeof(nid) );
+
+	nid.cbSize		= sizeof(NOTIFYICONDATA);
+	nid.hIcon		= hIcon;
+	nid.hWnd		= hWnd;
+	nid.uID			= 0;
+	nid.uFlags		= NIF_INFO | NIF_TIP | NIF_ICON;
+	nid.dwInfoFlags		= NIIF_INFO;
+
+	lstrcpy( nid.szTip, TEXT(szText) );
+	lstrcpy( nid.szInfo, TEXT(szInfo) );
+	lstrcpy( nid.szInfoTitle, TEXT(szInfoTitle) );
+
+	if(bAdd)
+		Shell_NotifyIcon( NIM_ADD, &nid );
+	else
+		Shell_NotifyIcon( NIM_DELETE, &nid );
+
+	if(hIcon)
+		DestroyIcon( hIcon );
+}
+
+#pragma ENDDUMP

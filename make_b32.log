@@ -1,0 +1,33 @@
+MAKE Version 5.2  Copyright (c) 1987, 2000 Borland
+	bcc32 -c -Iinclude;d:\xHarbour\include -5 -6 -d   -D__WIN32__ -g255  -oobj\b32\hipedit.obj source\hipedit.c
+Borland C++ 5.82 for Win32 Copyright (c) 1993, 2005 Borland
+source\hipedit.c:
+Error E2209 source\hipedit.c 8: Unable to open include file 'hbvmpub.h'
+Error E2209 source\hipedit.c 9: Unable to open include file 'hbinit.h'
+Error E2258 source\hipedit.c 13: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 14: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 15: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 16: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 17: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 18: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 19: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 20: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 21: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 22: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 23: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 26: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 27: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 28: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 29: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 30: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 31: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 32: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 33: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 34: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 35: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 36: Declaration was expected in function HB_FUNC
+Error E2258 source\hipedit.c 37: Declaration was expected in function HB_FUNC
+Error E2228 source\hipedit.c 37: Too many error or warning messages in function HB_FUNC
+*** 26 errors in Compile ***
+
+** error 1 ** deleting obj\b32\hipedit.obj

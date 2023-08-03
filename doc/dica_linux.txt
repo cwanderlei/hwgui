@@ -1,0 +1,158 @@
+Exemplo para usar em CENTOS 5.2
+Baseado neste link http://xhgtk.sourceforge.net/config12.html
+
+Primeiro tem que esta logado como ROOT para isso no TERMINAL digite:
+su
+
+Coloque a senha do usuario ROOT e ja vai esta como ROOT
+
+--> Instale os seguintes pacotes e suas dependencias usando o YUM
+ex: yum install bison
+
+slang-devel
+ncurses-devel
+unixODBC
+unixODBC-devel
+make
+cvs
+bison
+gcc
+libX11-devel
+gtk2-devel
+
+--> Opcionais
+postgresql-devel
+cups-devel
+
+--> Edite o seu arquivo ~/.bashrc e adiciones
+vi ~/.bashrc
+
+export HB_PATH=/usr/src/xharbour
+export HB_ARCHITECTURE=linux
+export HB_COMPILER=gcc
+export HB_GT_LIB=gtsln
+export HB_MULTI_GT=yes
+export HB_PREF=xhb
+export HB_BIN_INSTALL=$HB_PATH/bin
+export HB_LIB_INSTALL=$HB_PATH/lib
+export HB_INC_INSTALL=$HB_PATH/include
+export PATH=$HB_PATH/bin:$PATH
+
+Lembrando que estas variaves estarao disponiveis no proximo logon.
+
+depois entre na seguinte pasta:
+cd /usr/src
+
+logo depois baixe o xharbour:
+
+cvs -z3 -d:pserver:anonymous@xharbour.cvs.sourceforge.net:/cvsroot/xharbour co -P xharbour
+
+ou 
+
+cvs -z3 -d:pserver:anonymous@xharbour.cvs.sourceforge.net:/cvsroot/xharbour co -P -D 2006-12-30 xharbour
+
+--> Detalle:, "-D 2006-12-31" baixa a versao 0.99.70 estavel que eu utilizo,
+provavelmente vc usara uma versao mais atual. Basta remover este parametro
+para pegar a ultima versao do CVS.
+
+
+Aproveite para corrigir o problema de 100% de uso do CPU nos novos KERNEL.
+procure no arquivo source/rtl/idle.c pela linha
+  static struct timespec nanosecs = { 0, 1000 };
+e mude para
+static struct timespec nanosecs = { 0, 10000000 };
+
+no meu caso baixou o CPU de 80% para 1% a 3%.
+Resta saber se esta pratica 'e recomendada.
+Eu nao tive problemas at'e o momento.
+
+Agora compilando.
+entre na pasta abaixo:
+ 
+cd /usr/src/xharbour
+
+depois digite:
+
+./make_tgz.sh
+
+após compilado, execute:
+
+./xharbour-1.2.0-linux_2.6.26-1-686.inst.sh (confirme o nome na pasta 
+/usr/src/xharbour).
+
+o procedimento acima vai instalar os binários na pasta /usr/bin
+
+para compilar um simples teste.prg abra um terminal como usuário normal, 
+entre na pasta home/seu-usuario e digite:
+
+nano teste.prg
+
+proc main
+? "hello world"
+<CTRL-O> para gravar
+<CTRL-X> para sair
+
+para compilar, execute:
+
+xhbmk teste
+
+para executar:
+
+./teste
+
+
+Fim...
+
+Obs:
+uma vez instalado o comando chmod 777 nomedir coloca permissao na pasta 
+criada e chmod 666 nomearq coloca permissao nos arquivos
+para arquivo binario ser executado ele tem que ter a permissao 777
+
+ex:
+# chmod 777 /bin/harbour.cfg
+
+
+Agora para baixar e compilar a Hwgui:
+tem que ter o xharbour  e as libs gtk instaladas
+
+depois no terminal use assim:
+
+cd hwgui
+cd gtk
+dos2unix *.*
+chmod 777 *.*
+chmod 777 *
+./build.sh
+cp lib/*.a /usr/lib/xharbour
+
+
+pacotes nescessarios
+ncurses-devel,
+slang-devel
+gpm-devel
+glibc-devel
+glibc-devel-static
+unixodbc-devel
+XFree86-devel
+libgnomeprint2.2-data
+Tem que baixar e instalar a libgnomeprint-devel no link abaixo:
+ftp://zid-lux1.uibk.ac.at/pub/dist/centos/5/os/x86_64/CentOS/libgnomeprint22-devel-2.12.1-10.el5.i386.rpm
+
+
+Para instalar o aMsn tem que ter os pacote abaixo:
+gcc-c++
+tcl-devel
+tk-devel
+
+
+
+Alguns link:
+www.sygecom.com.br/linux/impressao_linux.txt
+www.sygecom.com.br/linux/hbmake_linux.zip
+www.sygecom.com.br/linux/hwgui.zip
+www.sygecom.com.br/linux/dbu.zip
+www.sygecom.com.br/linux/tbrowse.zip
+www.sygecom.com.br/linux/noip-duc-linux.tar.gz
+www.sygecom.com.br/linux/filezilla3.zip
+
+

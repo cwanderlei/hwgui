@@ -1,0 +1,9 @@
+testget3.prg
+testget3.rc
+-i..\..\include
+-lhwgui
+-lprocmisc
+-lhbxml
+-lhwg_qhtm
+-L..\..\lib
+-gtgui

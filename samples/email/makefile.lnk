@@ -1,0 +1,6 @@
+-Lc:\Bcc55\lib\obj;c:\Bcc55\lib;c:\xharbour\lib -Gn -M -m -s -Tpe -x -aa -L\lib +
+c0w32.obj obj\TESTE.obj, +
+teste.exe,, +
+hwgui.lib procmisc.lib hwg_qhtm.lib  lang.lib vm.lib rtl.lib rdd.lib macro.lib pp.lib dbfntx.lib dbfcdx.lib dbffpt.lib common.lib gtgui.lib gtnul.lib codepage.lib ct.lib tip.lib pcrepos.lib hsx.lib hbsix.lib  hwgui.lib hwguimt.lib hwg_qhtm.lib pcrepos.lib procmisc.lib import32.lib cw32.lib, +
+, +
+

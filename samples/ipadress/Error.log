@@ -1,0 +1,20 @@
+Error BASE/1066  Argument error: conditional
+Called from hipedit.prg->__KILLFOCUS(150)
+Called from hipedit.prg->(b)HIPEDIT:NEW(82)
+Called from hdialog.prg->DLGCOMMAND(450)
+Called from hdialog.prg->(b)(_INITSTATICS00003)(0)
+Called from hdialog.prg->HDIALOG:ONEVENT(218)
+Called from ->HWG_DLGBOXINDIRECT(0)
+Called from hdialog.prg->HDIALOG:ACTIVATE(173)
+Called from testip.prg->DLGGET(55)
+Called from testip.prg->(b)MAIN(12)
+Called from hwindow.prg->ONCOMMAND(594)
+Called from hwindow.prg->(b)HMAINWINDOW(191)
+Called from hwindow.prg->HMAINWINDOW:ONEVENT(293)
+Called from ->HWG_ACTIVATEMAINWINDOW(0)
+Called from hwindow.prg->HMAINWINDOW:ACTIVATE(281)
+Called from testip.prg->MAIN(15)
+
+HwGUI 2.17 xHarbour build 1.0.0 Intl. (SimpLex)
+Date:11/07/13
+Time:21:24:34

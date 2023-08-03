@@ -1,0 +1,32 @@
+c0w32.obj + 
+teste.obj, + 
+teste.exe, + 
+teste.map, + 
+..\..\lib\hwgui.lib + 
+..\..\lib\procmisc.lib + 
+..\..\lib\hbxml.lib + 
+..\..\lib\hwg_qhtm.lib + 
+..\..\lib\hbactivex.lib + 
+D:\XHARBOUR\lib\rtl.lib + 
+D:\XHARBOUR\lib\vm.lib + 
+D:\XHARBOUR\lib\gtgui.lib + 
+D:\XHARBOUR\lib\gtgui.lib + 
+D:\XHARBOUR\lib\lang.lib + 
+D:\XHARBOUR\lib\codepage.lib + 
+D:\XHARBOUR\lib\macro.lib + 
+D:\XHARBOUR\lib\rdd.lib + 
+D:\XHARBOUR\lib\dbfntx.lib + 
+D:\XHARBOUR\lib\dbfcdx.lib + 
+D:\XHARBOUR\lib\dbffpt.lib + 
+D:\XHARBOUR\lib\common.lib + 
+D:\XHARBOUR\lib\debug.lib + 
+D:\XHARBOUR\lib\pp.lib + 
+D:\XHARBOUR\lib\hsx.lib + 
+D:\XHARBOUR\lib\hbsix.lib + 
+D:\XHARBOUR\lib\mysql.lib + 
+D:\XHARBOUR\lib\libmysql.lib + 
+D:\XHARBOUR\lib\pcrepos.lib + 
+cw32.lib + 
+import32.lib, 
+obj\teste.res + 
+obj\hwgui_xp.res 

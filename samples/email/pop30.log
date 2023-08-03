@@ -1,0 +1,30 @@
+20110610-16:43:46  :INETCONNECT( smtp.datarey.com.br, 110 )
+>> 149665C <<
+
+20110610-16:43:46  :INETERRORCODE( 149665C )
+>>          0 <<
+
+20110610-16:43:46  :INETRECVLINE( 149665C, , 128 )
+>> +OK Dovecot ready. <<
+
+20110610-16:43:46  :INETERRORCODE( 149665C )
+>>          0 <<
+
+20110610-16:43:46  :INETSENDALL( 149665C, 38, USER desenvolvimento5@datarey.com.br )
+>>         38 <<
+
+20110610-16:43:46  :INETRECVLINE( 149665C, , 128 )
+>> +OK <<
+
+20110610-16:43:46  :INETERRORCODE( 149665C )
+>>          0 <<
+
+20110610-16:43:46  :INETSENDALL( 149665C, 14, PASS vitor01 )
+>>         14 <<
+
+20110610-16:43:46  :INETRECVLINE( 149665C, , 128 )
+>> +OK Logged in. <<
+
+20110610-16:43:46  :INETERRORCODE( 149665C )
+>>          0 <<
+

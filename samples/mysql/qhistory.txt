@@ -1,0 +1,5 @@
+SHOW COLUMNS FROM clientes
+
+SHOW COLUMNS FROM t_comprador
+
+SHOW COLUMNS FROM clientes

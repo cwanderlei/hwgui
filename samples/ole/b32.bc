@@ -1,0 +1,29 @@
+c0w32.obj + 
+iesample.obj, + 
+iesample.exe, + 
+iesample.map, + 
+..\..\lib\hwgui.lib + 
+..\..\lib\procmisc.lib + 
+..\..\lib\hbxml.lib + 
+..\..\lib\hwg_qhtm.lib + 
+..\..\lib\hbactivex.lib + 
+D:\xharbour123_Bcc73\lib\rtl.lib + 
+D:\xharbour123_Bcc73\lib\vm.lib + 
+D:\xharbour123_Bcc73\lib\gtgui.lib + 
+D:\xharbour123_Bcc73\lib\gtgui.lib + 
+D:\xharbour123_Bcc73\lib\lang.lib + 
+D:\xharbour123_Bcc73\lib\codepage.lib + 
+D:\xharbour123_Bcc73\lib\macro.lib + 
+D:\xharbour123_Bcc73\lib\rdd.lib + 
+D:\xharbour123_Bcc73\lib\dbfntx.lib + 
+D:\xharbour123_Bcc73\lib\dbfcdx.lib + 
+D:\xharbour123_Bcc73\lib\dbffpt.lib + 
+D:\xharbour123_Bcc73\lib\common.lib + 
+D:\xharbour123_Bcc73\lib\debug.lib + 
+D:\xharbour123_Bcc73\lib\pp.lib + 
+D:\xharbour123_Bcc73\lib\hsx.lib + 
+D:\xharbour123_Bcc73\lib\hbsix.lib + 
+D:\xharbour123_Bcc73\lib\pcrepos.lib + 
+cw32.lib + 
+import32.lib, 
+obj\hwgui_xp.res 

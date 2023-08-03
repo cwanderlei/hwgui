@@ -1,0 +1,14 @@
+Error BASE/1004  Class: 'NIL' has no exported method: END
+Called from ->END(0)
+Called from repexec.prg->PRINTREPORT(440)
+Called from a.prg->(b)MAIN(56)
+Called from hwindow.prg->ONCOMMAND(594)
+Called from hwindow.prg->(b)HMAINWINDOW(191)
+Called from hwindow.prg->HMAINWINDOW:ONEVENT(293)
+Called from ->HWG_ACTIVATEMDIWINDOW(0)
+Called from hwindow.prg->HMAINWINDOW:ACTIVATE(273)
+Called from a.prg->MAIN(81)
+
+HwGUI 2.17 xHarbour build 1.0.0 Intl. (SimpLex)
+Date:07/01/15
+Time:10:00:38

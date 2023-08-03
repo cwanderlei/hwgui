@@ -1,0 +1,15 @@
+Error BASE/1002  Alias does not exist: TSTB
+Called from ->DBSELECTAREA(0)
+Called from dbfuncs.prg->DBSELECTAR(73)
+Called from colrbloc.prg->BRWDBS(86)
+Called from colrbloc.prg->(b)MAIN(61)
+Called from hwindow.prg->ONCOMMAND(594)
+Called from hwindow.prg->(b)HMAINWINDOW(191)
+Called from hwindow.prg->HMAINWINDOW:ONEVENT(293)
+Called from ->HWG_ACTIVATEMAINWINDOW(0)
+Called from hwindow.prg->HMAINWINDOW:ACTIVATE(281)
+Called from colrbloc.prg->MAIN(71)
+
+HwGUI 2.17 xHarbour build 1.0.0 Intl. (SimpLex)
+Date:24/09/2012
+Time:17:44:00
